@@ -14,7 +14,7 @@ defmodule UseStore do
   end
 
   def handle_call(:work, _from, state) do
-    entries = Registry.lookup(DiWithReg.Registry, :store)
+    entries = Registry.lookup(DIWithReg.Registry, :store)
     value = for {pid, module} <- entries do
       module.get(pid)
     end

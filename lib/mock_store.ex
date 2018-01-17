@@ -10,7 +10,7 @@ defmodule MockStore do
   end
 
   def init(:ok) do
-    {:ok, _} = Registry.register(DiWithReg.Registry, :store, __MODULE__)
+    {:ok, _} = Registry.register(DIWithReg.Registry, :store, __MODULE__)
     {:ok, %{key: __MODULE__}}
   end
 

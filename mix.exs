@@ -1,4 +1,4 @@
-defmodule DiWithReg.Mixfile do
+defmodule DIWithReg.Mixfile do
   use Mix.Project
 
   def project do
@@ -13,7 +13,7 @@ defmodule DiWithReg.Mixfile do
 
   def application do
     [
-      mod: {DiWithReg, []},
+      mod: {DIWithReg, []},
       extra_applications: [:logger]
     ]
   end

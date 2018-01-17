@@ -1,4 +1,4 @@
-defmodule DiWithReg.Supervisor do
+defmodule DIWithReg.Supervisor do
   use Supervisor
 
   def start_link do
@@ -7,7 +7,7 @@ defmodule DiWithReg.Supervisor do
 
   def init(:ok) do
     Supervisor.init([
-      {Registry, keys: :duplicate, name: DiWithReg.Registry},
+      {Registry, keys: :duplicate, name: DIWithReg.Registry},
       {RealStore, nil}
     ], strategy: :one_for_one)
   end

@@ -1,4 +1,4 @@
-defmodule DiWithRegTest do
+defmodule DIWithRegTest do
   use ExUnit.Case
 
   setup do
